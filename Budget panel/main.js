@@ -14,10 +14,10 @@ function draw() {
     //dkkobj1000.draw()
     x.draw()
     x.clickOn(objArray)
-
     for(i = 0; i < objArray.length; i++){
         objArray[i].draw()
     }
+    
 }
 function mousePressed(){
     //dkkobj1000.dragandDrop()
