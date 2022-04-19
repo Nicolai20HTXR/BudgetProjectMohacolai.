@@ -18,6 +18,7 @@ function draw() {
         objArray[i].draw()
     }
     
+    
 }
 function mousePressed(){
     //dkkobj1000.dragandDrop()
