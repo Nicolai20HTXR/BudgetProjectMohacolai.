@@ -4,7 +4,7 @@ class Kasse {
         this.y = y
         this.r = r
         this.pengeInput = createInput('')
-        this.pengeInput.position(this.x + 25, this.y + 10)
+        this.pengeInput.position(this.x+(this.r-this.pengeInput.width)/2, this.y + 10)
         this.pengeInput.size(100)
         this.textInput = ""
     }
