@@ -4,9 +4,10 @@ class Kasse {
         this.y = y
         this.r = r
         this.pengeInput = createInput('')
-        this.pengeInput.position(this.x+(this.r-this.pengeInput.width)/2, this.y + 10)
+        this.pengeInput.position(this.x-((this.r-this.pengeInput.width)/2), this.y+((this.r-this.pengeInput.height)/4))
         this.pengeInput.size(100)
         this.textInput = ""
+        
     }
     draw() {
         //rColor = 
@@ -16,10 +17,12 @@ class Kasse {
         rect(this.x, this.y, this.r * 2, this.r, 25);
         
         
-        text(this.textInput,this.x+this.r/2,this.y+this.r/2)
+        this.textw = text(this.textInput,this.x+this.r/2,this.y+this.r/2)
+        this.textw.textSize(20)
         this.pengeInput.changed(() => {
             this.textInput = this.pengeInput.value()
             this.pengeInput.remove()
+            print()
         }) 
     }
 }

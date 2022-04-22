@@ -8,6 +8,7 @@ class money {
     }
     draw() {
         this.image = image(this.picture, this.x, this.y);
+
     }
 }
 /*
