@@ -1,4 +1,5 @@
-function preload() {
+function preload() 
+{
     kr50 = loadImage('50dkk.jpg');
     kr100 = loadImage('100dkk.jpg');
     kr200 = loadImage('200dkk.jpg');
@@ -7,17 +8,20 @@ function preload() {
     editimagepreload = loadImage("Edit.png");
 }
 
-function setup() {
+function setup() 
+{
     createCanvas(windowWidth, windowHeight);
     objArray = [];
     x = new AdderBox(25, 25, 100);
 }
 
-function draw() {
+function draw() 
+{
     background(210);
     x.draw();
     x.clickOn(objArray);
-    for (i = 0; i < objArray.length; i++) {
+    for (i = 0; i < objArray.length; i++) 
+    {
         objArray[i].draw();
     }
 }
