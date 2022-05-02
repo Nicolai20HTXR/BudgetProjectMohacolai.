@@ -1,11 +1,14 @@
-class money {
-    constructor(x, y, image) {
+class Money 
+{
+    constructor(x, y, image) 
+    {
         this.x = x;
         this.y = y;
         this.picture = image;
         this.beingPressed = false;
     }
-    draw() {
+    draw() 
+    {
         image(this.picture, this.x, this.y);
     }
 }
